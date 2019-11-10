@@ -22,6 +22,17 @@ $ composer install
 $ composer dump-autoload
 ```
 
+### create the .env file and set the following variables
+
+```sh
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blockbuter_dh
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
 ## How to run the migrations
 
 ```sh
