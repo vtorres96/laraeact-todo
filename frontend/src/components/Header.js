@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
+import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import Menu from "./Menu";
@@ -29,7 +26,7 @@ class Header extends Component {
     return (
       <div>
         <Menu
-          aoAbrirMenu={this.state.abrirMenu}
+          aoAbrirMenu={this.state.aoAbrirMenu}
           aoFecharMenu={this.closeMenu.bind(this)}
         />
         <AppBar position="static">
