@@ -9,8 +9,7 @@ import {
   Snackbar
 } from "@material-ui/core";
 
-import DeleteIcon from "@material-ui/icons/Close";
-import DoneIcon from "@material-ui/icons/Check";
+import { Close, Check } from "@material-ui/icons";
 
 const classes = {
   typography: {
@@ -124,13 +123,13 @@ class ListarTarefas extends Component {
                   onClick={() => this.excluirTarefa(tarefa.id)}
                   style={classes.fab}
                 >
-                  <DeleteIcon />
+                  <Close />
                 </Fab>
                 <Fab
                   color="primary"
                   onClick={() => this.concluirTarefa(tarefa.id)}
                 >
-                  <DoneIcon />
+                  <Check />
                 </Fab>
               </ListItem>
             );
